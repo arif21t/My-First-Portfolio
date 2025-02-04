@@ -1,0 +1,692 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    overflow-x: hidden;
+    background-color: #1f242d;
+    color: white;
+}
+
+.logo {
+    margin-top: 5px;
+    margin-left: 60px;
+    width: 75px;
+    height: 50px;
+    background-color: rgb(15, 31, 41);
+    background-color: transparent;
+
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 100;
+    background-color: rgb(5, 47, 70);
+}
+
+header nav {
+    position: absolute;
+    float: right;
+    align-items: center;
+    top: 0;
+    right: 0;
+    margin-right: 200px;
+    top: -5px;
+
+}
+
+header nav ul li {
+    list-style: none;
+    float: left;
+    padding-left: 40px;
+    padding-top: 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: rgb(238, 238, 238);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.li1 a:hover {
+    color: #dd6e06;
+    transform: scale(1.05);
+
+}
+
+.checkbtn {
+    display: none;
+    color: #f9f9ff;
+    font-size: 30px;
+    line-height: 80px;
+    /* লাইনের উচ্চতা */
+    position: absolute;
+    /* অবস্থান নির্ধারণ */
+    right: 20px;
+    /* ডান পাশ থেকে দূরত্ব */
+    top: 2px;
+    /* উপরের দিক থেকে দূরত্ব */
+    z-index: 1000;
+    /* উপরের স্তরে দেখানোর জন্য */
+    margin-right: -200px;
+
+}
+
+/*  
+ .checkbtn{
+    color: #f9f9ff;
+    display: none;
+    font-size: 30px;
+    line-height: 80px;
+    margin-left: 500px;
+}*/
+
+
+
+#check {
+
+    display: none;
+}
+
+p::first-letter {
+    color: #dd6e06;
+    font-size: 1em;
+    font-weight: bold
+}
+
+.sec1 {
+
+    width: 100%;
+    height: 620px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.info1 {
+    margin-top: 150px;
+}
+
+.info1 h1 {
+    font-size: 55px;
+    margin: 10px 0;
+}
+
+
+
+.info1 h2 {
+    font-size: 32px;
+    margin-top: -8px;
+
+}
+
+
+.info1 h2 {
+    font-size: 32px;
+    margin-top: -8px;
+}
+
+.info1,
+.info2 {
+    width: 50%;
+}
+
+.info1 {
+
+    margin-left: 230px;
+    margin-bottom: 120px;
+}
+
+span {
+    color: #dd6e06;
+}
+
+.info2 .img-box {
+    position: relative;
+    width: 32vw;
+    height: 32vw;
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.info2 .img-box::before,
+.info2 .img-box::after {
+
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: conic-gradient(transparent, transparent, transparent, #dd6e06);
+    transform: rotate(0deg);
+    animation: rotate-border 10s linear infinite;
+}
+
+@keyframes rotate-border {
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+.info2 .img-box .img-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #1f242d;
+    border-radius: 50%;
+    border: #1f242d;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.info2 .img-box .img-item img {
+    position: absolute;
+    display: block;
+    width: 85%;
+    object-fit: cover;
+    width: 439px;
+    mix-blend-mode: lighten;
+}
+
+
+
+
+.info1 h3 {
+    font-weight: normal;
+}
+
+.info1 h1 {
+    font-size: 35px;
+}
+
+.info1 input {
+    padding: 8px 16px;
+    background-color: #dd6e06;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+}
+
+.info1 input:hover {
+    transition: all 0.2s ease-in 0.1;
+    outline: none;
+    transform: scale(1.04);
+}
+
+.info1 i {
+    color: rgb(202, 196, 214);
+}
+
+/* section 2 str */
+.sec2 {
+
+    width: 100%;
+    height: 620px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.sec2 div {
+    width: 40%;
+    margin: 0 auto;
+
+}
+
+.sec2 img {
+
+    width: 90%;
+    padding-left: 110px;
+}
+
+.info3 h3 {
+    font-weight: normal;
+}
+
+.info3 h2 {
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.info3 p {
+    font-size: 16px;
+
+}
+
+.info3 input {
+    padding: 8px 16px;
+    background-color: #dd6e06;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+}
+
+.info3 input:hover {
+    transition: all 0.2s ease-in 0.1;
+    outline: none;
+    transform: scale(1.05)
+}
+
+/*section 2 end*/
+.sec3 {
+    width: 100%;
+    height: 620px;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+
+}
+
+.info4 h1 {
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+.info4 p {
+    font-size: 15px;
+    width: 650px;
+    margin: 0% auto;
+
+}
+
+.service {
+
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 40px;
+
+}
+
+.ser1 p {
+    font-size: 12px;
+}
+
+.ser1 .ser2 {
+    width: 100%;
+    overflow: hidden;
+}
+
+.ser1 div,
+.ser2 div {
+    width: 30%;
+    float: left;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.service i {
+
+    font-size: 26px;
+}
+
+.ser1 i:hover {
+
+    color: #dd6e06;
+}
+
+
+
+
+
+/*portfolio strt*/
+.se4 {
+    width: 100%;
+    box-sizing: border-box;
+    height: 620px;
+
+}
+
+.text1 p {
+    margin-top: -10px;
+    margin-bottom: 20px;
+    font-size: small;
+
+}
+
+.text1 {
+    padding: 70px 0;
+    text-align: center;
+}
+
+.img-container img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
+
+.sec4 .img-container {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 10px;
+
+}
+
+.image-container img {
+    width: 10%;
+    /* প্রতিটি ছবি 10%প্রস্থ নিবে */
+    height: auto;
+    /* ছবির উচ্চতা স্বাভাবিক থাকবে */
+}
+
+.sec4 input {
+    color: white;
+    padding: 3px 8px;
+    background-color: #dd6e06;
+    outline: none;
+    border-radius: 10px;
+    font-size: 10px;
+}
+
+.sec4 input:hover {
+    box-shadow: 5px 10px 30px rgba(130, 143, 137, 0.5);
+    transition: all 0.2s ease-in 0.1;
+    outline: none;
+    transform: scale(1.05)
+}
+
+.sec4 .img-container img:hover {
+    transform: scale(1.06);
+    transition: 1s;
+}
+
+/* prlm */
+.img-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+}
+
+.img-container div[type="button"] {
+    margin-top: auto;
+}
+
+.img-container {
+
+    text-align: center;
+}
+
+.img-container div img {
+    border-radius: 10px;
+    border-color: black;
+}
+
+.img-container p:hover {
+    transform: scale(1.06);
+    transition: 1s;
+}
+
+footer {
+    padding-top: 50px;
+    background-color: rgb(32, 30, 30);
+    width: 100%;
+}
+
+.foot {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+
+}
+
+.botombar {
+    background-color: #dd6e06;
+    text-align: center;
+    padding: 0.08px 0;
+    margin-top: 20px;
+
+}
+
+.botombar p {
+    color: rgba(0, 0, 0, 0.9);
+    margin: 0;
+    padding: 6px;
+
+}
+
+.foot1 .icon a {
+    margin: 5px;
+    color: #dd6e06;
+}
+
+.foot1 .icon a i:hover {
+    transform: scale(2);
+    transition: 1s;
+}
+
+footer {
+    margin-top: 50px;
+}
+
+.foot1 button {
+    color: white;
+    background-color: #dd6e06;
+}
+
+@media (max-width:768px) {
+    header {
+        width: 100%;
+        height: auto;
+
+    }
+
+    header.logo {
+        margin-left: 50px;
+        padding: 20px;
+    }
+
+    .checkbtn {
+        display: block;
+
+    }
+
+    header nav ul {
+        position: fixed;
+        width: 150px;
+        height: auto;
+        background-color: #494d54;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        top: 54px;
+        left: -200%;
+        padding-bottom: 19px;
+        transform: scale(1);
+        transition: all.5s;
+        border-radius: 40px;
+    }
+
+    header nav ul li {
+        line-height: 30px;
+        clear: both;
+        margin-top: 15px;
+        margin-left: -50px;
+    }
+
+    #check:checked~ul {
+        left: 0px;
+    }
+
+    header nav ul li a {
+
+        font-size: 15px;
+        color: #efecde;
+    }
+}
+
+@media (max-width: 768px) {
+    .sec1 {
+        flex-direction: column-reverse;
+        text-align: center;
+        height: auto;
+        padding: 20px;
+    }
+
+    .info1,
+    .info2 {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .info1 {
+        padding-top: 100px;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .info2 {
+        padding-right: 0;
+    }
+
+    .info1 h1 {
+
+        font-size: 28px;
+    }
+
+    .info1 p {
+        width: 90%;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .info1 input {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+
+    .info2 {
+        padding-top: 60px;
+        margin-left: 130px;
+
+
+    }
+
+    .info2 .img-box {
+
+        position: relative;
+        width: 50vw;
+        height: 50vw;
+
+    }
+
+}
+
+@media (max-width: 768px) {
+    .sec2 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .sec2 div {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .sec2 img {
+        width: 100%;
+        padding-left: 0;
+        border-radius: 10%;
+    }
+
+    .info3 {
+        text-align: center;
+    }
+
+    .info3 input {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sec3 {
+
+        padding: 20px;
+        height: auto;
+    }
+
+    .info4 h1 {
+        font-size: 25px;
+    }
+
+    .info4 p {
+        width: 90%;
+        height: auto;
+        font-size: 10px;
+        color: white;
+    }
+
+    .service {
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .ser1 div,
+    .ser2 div {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+
+    .service i {
+        padding-right: 30px;
+        font-size: 24px;
+    }
+
+    .service p {
+        width: 90%;
+        font-size: 10px;
+        opacity: 0.7;
+    }
+
+    .service i:hover {
+        transform: scale(1.2);
+    }
+}
+
+@media(max-width:768px) {
+    footer .foot {
+
+        font-size: 10px;
+    }
+
+    .foot1 {
+        margin: 5px;
+    }
+
+    .icon {
+        display: grid;
+        gap: 0.1;
+    }
+}
